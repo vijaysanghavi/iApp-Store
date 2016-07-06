@@ -14,18 +14,28 @@
 		3471885F1D2B97D400ED4435 /* ConnectionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3471885E1D2B97D400ED4435 /* ConnectionAPI.swift */; };
 		347188611D2B990F00ED4435 /* ConnectionBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347188601D2B990F00ED4435 /* ConnectionBO.swift */; };
 		347188641D2B99C800ED4435 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347188631D2B99C800ED4435 /* Constants.swift */; };
+		BAC29A981D2D051F00F62390 /* LandinPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC29A971D2D051F00F62390 /* LandinPageVC.swift */; };
+		BAC29A9A1D2D105F00F62390 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC29A991D2D105F00F62390 /* ServiceLocator.swift */; };
+		BAC29A9C1D2D117100F62390 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC29A9B1D2D117100F62390 /* CommonUtils.swift */; };
+		BAC29AA31D2D167800F62390 /* ObjcHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC29AA21D2D167800F62390 /* ObjcHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		347188411D2B940100ED4435 /* iApp Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iApp Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		347188441D2B940100ED4435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3471884B1D2B940200ED4435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		347188501D2B940200ED4435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3471884B1D2B940200ED4435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
+		347188501D2B940200ED4435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../Info.plist; sourceTree = "<group>"; };
 		3471885A1D2B979900ED4435 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3471885B1D2B979900ED4435 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3471885E1D2B97D400ED4435 /* ConnectionAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionAPI.swift; sourceTree = "<group>"; };
 		347188601D2B990F00ED4435 /* ConnectionBO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionBO.swift; sourceTree = "<group>"; };
 		347188631D2B99C800ED4435 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BAC29A971D2D051F00F62390 /* LandinPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandinPageVC.swift; sourceTree = "<group>"; };
+		BAC29A991D2D105F00F62390 /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		BAC29A9B1D2D117100F62390 /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		BAC29AA01D2D167700F62390 /* iApp Store-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iApp Store-Bridging-Header.h"; sourceTree = "<group>"; };
+		BAC29AA11D2D167800F62390 /* ObjcHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcHelper.h; sourceTree = "<group>"; };
+		BAC29AA21D2D167800F62390 /* ObjcHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +72,6 @@
 				347188591D2B979900ED4435 /* Resources */,
 				347188561D2B976300ED4435 /* Client */,
 				347188571D2B976E00ED4435 /* Server */,
-				3471884B1D2B940200ED4435 /* Assets.xcassets */,
-				347188501D2B940200ED4435 /* Info.plist */,
 			);
 			path = "iApp Store";
 			sourceTree = "<group>";
@@ -71,6 +79,7 @@
 		347188561D2B976300ED4435 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				BAC29A961D2D050C00F62390 /* LandingPageVC */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -78,6 +87,7 @@
 		347188571D2B976E00ED4435 /* Server */ = {
 			isa = PBXGroup;
 			children = (
+				BAC29A9D1D2D14E700F62390 /* Common */,
 				347188621D2B99BE00ED4435 /* Utils */,
 				347188581D2B976E00ED4435 /* Connection */,
 			);
@@ -98,6 +108,8 @@
 			children = (
 				3471885A1D2B979900ED4435 /* LaunchScreen.storyboard */,
 				3471885B1D2B979900ED4435 /* Main.storyboard */,
+				3471884B1D2B940200ED4435 /* Assets.xcassets */,
+				347188501D2B940200ED4435 /* Info.plist */,
 			);
 			name = Resources;
 			path = Base.lproj/Resources;
@@ -106,9 +118,37 @@
 		347188621D2B99BE00ED4435 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				BAC29A991D2D105F00F62390 /* ServiceLocator.swift */,
 				347188631D2B99C800ED4435 /* Constants.swift */,
+				BAC29A9B1D2D117100F62390 /* CommonUtils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		BAC29A961D2D050C00F62390 /* LandingPageVC */ = {
+			isa = PBXGroup;
+			children = (
+				BAC29A971D2D051F00F62390 /* LandinPageVC.swift */,
+			);
+			path = LandingPageVC;
+			sourceTree = "<group>";
+		};
+		BAC29A9D1D2D14E700F62390 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BAC29A9E1D2D150500F62390 /* ObjC Components */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BAC29A9E1D2D150500F62390 /* ObjC Components */ = {
+			isa = PBXGroup;
+			children = (
+				BAC29AA11D2D167800F62390 /* ObjcHelper.h */,
+				BAC29AA21D2D167800F62390 /* ObjcHelper.m */,
+				BAC29AA01D2D167700F62390 /* iApp Store-Bridging-Header.h */,
+			);
+			path = "ObjC Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +222,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC29A9A1D2D105F00F62390 /* ServiceLocator.swift in Sources */,
 				347188611D2B990F00ED4435 /* ConnectionBO.swift in Sources */,
+				BAC29A981D2D051F00F62390 /* LandinPageVC.swift in Sources */,
 				3471885F1D2B97D400ED4435 /* ConnectionAPI.swift in Sources */,
 				347188451D2B940100ED4435 /* AppDelegate.swift in Sources */,
+				BAC29AA31D2D167800F62390 /* ObjcHelper.m in Sources */,
+				BAC29A9C1D2D117100F62390 /* CommonUtils.swift in Sources */,
 				347188641D2B99C800ED4435 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,10 +325,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "iApp Store/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Grability.CLB.iApp-Store";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iApp Store/Server/Common/ObjC Components/iApp Store-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -292,10 +339,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "iApp Store/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Grability.CLB.iApp-Store";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iApp Store/Server/Common/ObjC Components/iApp Store-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -318,6 +367,7 @@
 				347188551D2B940200ED4435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
